@@ -445,10 +445,22 @@ body {
     text-align: start;
   }
 }
+@media (min-width: 501px), (max-width: 767px) {
+  .hero__container {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .hero__container {
+    align-items: center;
+    text-align: center;
+  }
+}
 .hero__img {
   width: 100%;
   display: block;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   animation: pulsate-bck 2s ease-in-out infinite both;
 }
@@ -502,6 +514,12 @@ body {
   }
   50% {
     border-color: rgb(255, 255, 255);
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero__paragraph {
+    display: block;
+    font-size: 0.7rem;
   }
 }
 .hero__cta {
