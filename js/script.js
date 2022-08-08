@@ -2,7 +2,8 @@
 	window.addEventListener("load", function () {
 		const loader = document.querySelector(".loader");
 		loader.className += " hidden";
-	});
+	}); // end loader
+
 
 
 	// register
@@ -25,6 +26,6 @@
 	// 	animateClass: 'animated', // default
 	// 	offset: 0, // default
 	// 	mobile: true, // default
-	// 	live: true // default
+	// 	live: true // defaultz
 	// })
 	// wow.init();
