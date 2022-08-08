@@ -1,7 +1,7 @@
 	// loader
 	window.addEventListener("load", function () {
 		const loader = document.querySelector(".loader");
-		loader.className += "hidden";
+		loader.className += " hidden";
 	});
 
 
@@ -13,11 +13,18 @@
 			icon: 'error',
 			title: 'Uyss...',
 			text: 'Aun no se habilitan los registros!',
-			footer: '<a href="mailto:soporte@pokegocl.com?Subject=Contacto%20web%20PokeGOCL">Contacta al administrador</a>'
+			footer: '<a href="mailto:soporte@pokegocl.com?Subject=Contacto%20web%20PokeGOCL">Contacta con el administrador</a>'
 		})
 
 	});
 
 
-	// AOS animation
-	AOS.init();
+	new WOW().init();
+	// wow = new WOW({
+	// 	boxClass: 'wow', // default
+	// 	animateClass: 'animated', // default
+	// 	offset: 0, // default
+	// 	mobile: true, // default
+	// 	live: true // default
+	// })
+	// wow.init();
