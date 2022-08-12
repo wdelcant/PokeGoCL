@@ -16,7 +16,6 @@
 			text: 'Aun no se habilitan los registros!',
 			footer: '<a href="mailto:soporte@pokegocl.com?Subject=Contacto%20web%20PokeGOCL">Contacta con el administrador</a>'
 		})
-
 	});
 
 
