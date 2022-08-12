@@ -459,6 +459,7 @@ body {
 }
 .hero__img {
   width: 100%;
+  height: auto;
   display: block;
   max-width: 500px;
   margin: 0 auto;
@@ -548,6 +549,7 @@ body {
 }
 .nav__logo {
   width: 40%;
+  height: auto;
   max-width: 60px;
   display: block;
   animation: rotate 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
