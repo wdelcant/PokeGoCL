@@ -27,39 +27,39 @@
 
 <body>
     <section class="container">
-        <form class="row g-3 needs-validation" novalidate">
+        <form action="" class="row g-3 needs-validation" novalidate method="POST">
             <div class="form-floating col-md-12">
-                <input type="text" class="form-control" id="nick" placeholder="Croxito">
+                <input type="text" class="form-control" id="nick" name="nick" placeholder="Croxito">
                 <label for="nick">Nombre de entrenador (Nick del juego)</label>
             </div>
 
             <div class="form-floating col-md-6">
-                <input type="email" class="form-control" id="email" placeholder="nombre@gmail.com">
+                <input type="email" class="form-control" id="email" name="email" placeholder="nombre@gmail.com">
                 <label for="email">Email</label>
 
             </div>
             <div class="form-floating col-md-6">
-                <input type="tel" class="form-control" id="phone" placeholder="954205122">
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="954205122">
                 <label for="phone">Celular</label>
             </div>
 
             <div class="form-floating col-md-6">
-                <input type="number" class="form-control" id="code" placeholder="111122223333">
+                <input type="number" class="form-control" id="code" name="code" placeholder="111122223333">
                 <label for="code" class="form-label">Código de amistad</label>
             </div>
 
             <div class="form-floating col-md-6">
-                <select class="form-select" id="team">
+                <select class="form-select" id="team" type="text" name="team">
                     <option selected></option>
-                    <option value="1">Instinto</option>
-                    <option value="2">Valor</option>
-                    <option value="3">Sabiduría</option>
+                    <option value="Instinto">Instinto</option>
+                    <option value="Valor">Valor</option>
+                    <option value="Sabiduría">Sabiduría</option>
                 </select>
                 <label for="team">Team / Equipo / Color</label>
             </div>
 
             <div class="form-floating col-md-12">
-                <input type="text" class="form-control" id="location" placeholder="Limache">
+                <input type="text" class="form-control" id="location" name="location" placeholder="Limache">
                 <label for="location" class="form-label">Sector de Limache donde juegas? </label>
             </div>
 
@@ -72,9 +72,6 @@
 
 
     </section>
-
-    <!-- Optional JavaScript -->
-    <script src="../js/API/formAPI.js"></script>
 
 
 

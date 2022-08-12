@@ -1,0 +1,33 @@
+{
+  "name": "pokegocl",
+  "version": "1.0.0",
+  "description": "web pokego",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdelcant/PokeGoCL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wdelcant/PokeGoCL/issues"
+  },
+  "homepage": "https://github.com/wdelcant/PokeGoCL#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "googleapis": "^105.0.0",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "nodemon": "^2.0.19",
+    "tailwindcss": "^3.1.8"
+  }
+}
