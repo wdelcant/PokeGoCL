@@ -11442,12 +11442,13 @@ body {
   }
 }
 .registros__title {
-  size: 20px;
+  size: 1.25rem;
 }
 .registros__table {
   display: grid;
   background-color: white;
   padding: auto;
+  overflow: auto;
 }
 .registros__icon {
   font-size: 1.5625rem;
