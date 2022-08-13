@@ -32,14 +32,47 @@ function obtenerEntrenadores() {
                 entrenadores.forEach((entrenador) => {
                     let columna = document.createElement('tr')
                     columna.className = 'columna'
-                    columna.innerHTML = `
-                <td>${entrenador.nick}</td>
-                <td>${entrenador.code}</td>
-                <td>${entrenador.team}</td> 
-                <td>${entrenador.location}</td>
-                <td><a href="${entrenador.phone}">WhatsApp</a></td>
-                <td><a href="${entrenador.image}" alt="${entrenador.nick}">Imagen</a></td>
-                `
+
+                    let nick = document.createElement('td')
+                    nick.innerHTML = entrenador.nick
+                    nick.classList.add('nick')
+
+                    let code = document.createElement('td')
+                    code.innerHTML = entrenador.code
+                    code.classList.add('code')
+
+                    let team = document.createElement('td')
+                    if (entrenador.team === 'Instinto (Amarillo)') {
+                        team.innerHTML = `<img src="/assets/images/amarillo.png" alt="instinto" class="team">`
+                    } else if (entrenador.team === 'Sabiduría (Azul)') {
+                        team.innerHTML = `<img src="/assets/images/azul.png" alt="sabiduría" class="team">`;
+                    } else if (entrenador.team === 'Valor (Rojo)') {
+                        team.innerHTML = `<img src="/assets/images/rojo.png" alt="valor" class="team">`;
+                    }
+
+
+                    let location = document.createElement('td')
+                    location.innerHTML = entrenador.location
+
+
+                    let phone = document.createElement('td')
+                    phone.classList.add = 'phone'
+                    phone.innerHTML = `<td><a href="${entrenador.phone}"><i class="bi bi-whatsapp registros__icon registros__icon--wsp"></i></a></td>`
+                    // phone.classList.add('phone')
+
+                    let image = document.createElement('td')
+                    image.innerHTML = `<td><a href="${entrenador.image}" alt="${entrenador.nick}"><i class="bi bi-images registros__icon registros__icon--img"></i></a></td>`
+                    image.classList.add('image')
+
+                    /* Agregar los elementos secundarios al elemento principal. */
+
+                    columna.appendChild(nick)
+                    columna.appendChild(code)
+                    columna.appendChild(team)
+                    columna.appendChild(location)
+                    columna.appendChild(phone)
+                    columna.appendChild(image)
+                    /* Agregar el elemento principal al contenedor. */
                     obtenerTrainers.appendChild(columna)
                 })
             }
