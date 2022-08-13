@@ -32,7 +32,7 @@ function obtenerEntrenadores() {
                 entrenadores.forEach((entrenador) => {
                     let columna = document.createElement('tr')
                     columna.className = 'columna'
-
+                    
                     let nick = document.createElement('td')
                     nick.innerHTML = entrenador.nick
                     nick.classList.add('nick')
@@ -41,19 +41,20 @@ function obtenerEntrenadores() {
                     code.innerHTML = entrenador.code
                     code.classList.add('code')
 
-                    let team = document.createElement('td')
-                    if (entrenador.team === 'Instinto (Amarillo)') {
-                        team.innerHTML = `<img src="/assets/images/amarillo.png" alt="instinto" class="team">`
-                    } else if (entrenador.team === 'Sabiduría (Azul)') {
-                        team.innerHTML = `<img src="/assets/images/azul.png" alt="sabiduría" class="team">`;
-                    } else if (entrenador.team === 'Valor (Rojo)') {
-                        team.innerHTML = `<img src="/assets/images/rojo.png" alt="valor" class="team">`;
-                    }
-
-
                     let location = document.createElement('td')
                     location.innerHTML = entrenador.location
 
+                    let team = document.createElement('td')
+                    if (entrenador.team === 'Instinto (Amarillo)') {
+                        team.innerHTML = `<img src="/assets/images/amarillo.png" alt="instinto" class="registros__icon registros__icon--amarillo">`
+
+                    } else if (entrenador.team === 'Sabiduría (Azul)') {
+                        team.innerHTML = `<img src="/assets/images/azul.png" alt="sabiduría" class="registros__icon registros__icon--azul">`;
+
+                    } else if (entrenador.team === 'Valor (Rojo)') {
+                        team.innerHTML = `<img src="/assets/images/rojo.png" alt="valor" class="registros__icon registros__icon--rojo">`;
+
+                    }
 
                     let phone = document.createElement('td')
                     phone.classList.add = 'phone'
@@ -68,8 +69,8 @@ function obtenerEntrenadores() {
 
                     columna.appendChild(nick)
                     columna.appendChild(code)
-                    columna.appendChild(team)
                     columna.appendChild(location)
+                    columna.appendChild(team)
                     columna.appendChild(phone)
                     columna.appendChild(image)
                     /* Agregar el elemento principal al contenedor. */

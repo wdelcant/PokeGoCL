@@ -11449,13 +11449,29 @@ body {
   font-size: 1.5625rem;
   color: rgb(158, 158, 158);
 }
+.registros__icon--amarillo:hover {
+  color: rgb(255, 255, 0);
+  text-shadow: 0px 0px 4px, 1px 1px 5px rgb(194, 194, 194);
+}
+.registros__icon--rojo:hover {
+  color: rgb(255, 0, 0);
+  text-shadow: 0px 0px 4px, 1px 1px 5px rgb(194, 194, 194);
+}
+.registros__icon--azul:hover {
+  color: rgb(0, 0, 255);
+  text-shadow: 0px 0px 4px, 1px 1px 5px rgb(194, 194, 194);
+}
+.registros__icon--wsp {
+  color: rgb(37, 211, 102);
+}
 .registros__icon--wsp:hover {
   text-shadow: 0px 0px 4px, 1px 1px 5px rgb(194, 194, 194);
-  color: rgb(37, 211, 102);
+}
+.registros__icon--img {
+  color: rgb(160, 56, 179);
 }
 .registros__icon--img:hover {
   text-shadow: 0px 0px 4px, 1px 1px 5px rgb(194, 194, 194);
-  color: rgb(160, 56, 179);
 }
 
 /*# sourceMappingURL=style.css.map */
