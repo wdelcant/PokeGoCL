@@ -23,35 +23,55 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<section id="entrenadores" class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Entrenadores</h1>
+
+<body class="body">
+
+
+    <section id="entrenadores" class="container">
+        <div class="col-md-6">
+            <div class="col-md-6">
+                <h1>Entrenadores</h1>
+            </div>
+
+            <div class="form-floating col-md-3">
+                <input id="formulario" type="text" class="form-control" placeholder="Buscar">
+                <label for="buscar">Buscar entrenador</label>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre de entrenador</th>
+                            <th>Código de amistad</th>
+                            <th>Team</th>
+                            <th>Localización</th>
+                            <th>Celular</th>
+                            <th>Avatar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trainers">
+                        <tr id="busqueda">
+                        </tr>
+
+                    </tbody>
+    </section>
+    <!-- Loader -->
+    <!-- <div class="loader">
+        <img src="./assets/images/spinning.svg">
+    </div> -->
+    <div class="loader">
+        <div class="pokeball">
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Nombre de entrenador</th>
-                        <th>Código de amistad</th>
-                        <th>Team</th>
-                        <th>Localización</th>
-                        <th>Celular</th>
-                        <th>Avatar</th>
-                    </tr>
-                </thead>
-                <tbody id="trainers">
-                    <tr>
 
-                    </tr>
-
-                </tbody>
-</section>
-
-<body>
     <script src=" ../js/API/formSubmit.js"></script>
+    <script src="../js/script.js"></script>
+
 </body>
 
 </html>

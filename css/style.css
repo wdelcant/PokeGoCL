@@ -11125,7 +11125,7 @@ body {
 .pokeball {
   width: 60px;
   height: 60px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -11139,18 +11139,18 @@ body {
   height: 30px;
   background-color: red;
   border-bottom: 4px solid;
-  top: -4px;
+  top: 0px;
 }
 .pokeball:before {
   content: "";
   position: absolute;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   width: 10px;
   height: 10px;
-  border: 4px solid;
+  border: 3px solid;
   border-radius: 50%;
-  bottom: 18px;
-  right: 18px;
+  bottom: 21px;
+  right: 22px;
   z-index: 1;
 }
 @keyframes frames {

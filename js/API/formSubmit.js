@@ -7,16 +7,20 @@ const obtenerTrainers = document.getElementById('trainers');
 function obtenerEntrenadores() {
     fetch('https://sheets.googleapis.com/v4/spreadsheets/11NqWwCvuONUB_bjN3QlisupRCDSKFS7bT8RkbIADA7M/values/Respuestas!A2:G?key=AIzaSyASgC40HnjZPwRZ5Jy8VUpw_Vj6IVvXuLc', options)
         .then((response) => {
-            console.log(response);
+            // console.log(response);
             return response.json();
         })
         .then((data) => {
             data = data.values;
-            console.log(data);
-            console.log(data[1][0]);
+            // const results = data.map(trainer => trainer[1]);
+            // renderResults(results);
+            // console.log(results)
+
+            // console.log(data);
+            // console.log(data[1][0]);
             for (let i = 0; i < data.length; i++) {
                 let entrenadores = [{
-                    // fecha: data[0][0],
+                    fecha: data[0][0],
                     nick: data[i][1],
                     code: data[i][2],
                     team: data[i][3],
@@ -40,9 +44,34 @@ function obtenerEntrenadores() {
                 })
             }
         })
+
         .catch(err => console.error(err));
 
 }
-
-
 obtenerEntrenadores();
+
+// function renderResults(results) {
+//     const list = document.getElementById('busqueda');
+//     list.innerHTML = '';
+//     results.forEach(result => {
+//         const trainer = document.createElement('tr');
+//         trainer.innerText = result
+//         list.appendChild(trainer);
+//     })
+// }
+
+// window.onload = () => {
+//     const searchFieldElement = document.getElementById('formulario');
+//     searchFieldElement.addEventListener('keyup', (event) => {
+
+//         clearTimeout(searchTimeoutToken);
+
+//         if (searchFieldElement.value.length === 0) {
+//             return;
+//         }
+
+//         searchTimeoutToken = setTimeout(() => {
+//             obtenerEntrenadores(searchFieldElement.value);
+//         }, 250);
+//     });
+// }
