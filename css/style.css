@@ -11420,12 +11420,13 @@ body {
   display: grid;
   gap: 3.125rem;
   text-align: center;
+  justify-content: center;
 }
 @media (min-width: 820px) {
   .registros__container {
     grid-template-columns: 1fr;
     align-items: center;
-    text-align: start;
+    text-align: center;
   }
 }
 @media (min-width: 501px), (max-width: 819px) {
@@ -11439,6 +11440,9 @@ body {
     align-items: center;
     text-align: center;
   }
+}
+.registros__title {
+  size: 20px;
 }
 .registros__table {
   display: grid;
