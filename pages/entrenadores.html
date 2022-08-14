@@ -26,25 +26,43 @@
 
 <body class="body">
     <header class="header">
-        <div class="col-md-6">
-            <div class="col-md-6">
-
-                <h1 class="header__tittle">Entrenadores</h1>
-            </div>
-            <div>
-                <div class="header__banner">
-                    
+        <div class="header__background">
+            <!-- menu principal -->
+            <nav class="navbar navbar-dark navbar-expand-md">
+                <div class="container"><a class="navbar-brand logotipo" href="index.html"><strong>PokeGO
+                            <span class="logo">Limache</span></strong></a>
+                    <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                        <span class="visually-hidden">Toggle
+                            navigation</span>
+                        <span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html" target="_top">Inicio</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active" href="entrenadores.html">Trainers</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+            <!-- eslogan y botón reserva -->
+            <div class="d-grid flex-row justify-content-center align-items-center m-auto eslogan-div">
+                <h1 class="header__tittle">
+                    <span>Lista de entrenadores</span>
+                </h1>
             </div>
         </div>
-        <nav>
-        </nav>
+
+
+
+
+
+
     </header>
     <main class="registros">
         <section id="entrenadores" class="registros__container">
 
             <div class="row col-md-12 registros__table">
-                <table class="table table-striped">
+                <table class="table table-responsive table-striped table-hover">
                     <thead>
                         <tr>
                             <th>Nombre de entrenador</th>
@@ -68,9 +86,12 @@
         <div class="pokeball">
         </div>
     </div>
+    <!-- boostrap -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Optional JavaScript -->
     <script src=" ../js/API/formSubmit.js"></script>
     <script src="../js/script.js"></script>
+
 
 </body>
 

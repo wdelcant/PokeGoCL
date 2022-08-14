@@ -11137,92 +11137,18 @@ body {
   }
 }
 
-.body {
-  background-color: var(--violet);
+.header__background {
+  background: linear-gradient(#000000, rgba(255, 255, 255, 0.1607843137) 50%), linear-gradient(rgba(0, 0, 0, 0.3019607843), rgba(0, 0, 0, 0.3019607843)), url(../assets/images/bannerWeb.jpg) center/cover space;
+  height: 30vh;
+  filter: blur(0px);
 }
-
-.header {
-  position: relative;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 5rem 0;
-  z-index: 10;
-}
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background-image: url(../assets/images/bannerWeb.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: contain;
-  z-index: 1;
-}
-@media (min-width: 820px) {
-  .header::before {
-    background-image: url(../assets/images/bannerWeb.jpg);
-    height: 100%;
-    background-size: 100% 100%;
-  }
-}
-.header__logo {
-  width: 40%;
-  height: auto;
-  max-width: 60px;
-  display: block;
-  animation: rotate 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-.header__logo:hover {
-  animation: flip 2s infinite;
-}
-@keyframes flip {
-  50% {
-    transform: rotateY(180deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: translateZ(200px) rotate(45deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateZ(0) rotate(0);
-    opacity: 1;
-  }
-}
-.header__banner {
-  width: 60%;
-  height: auto;
-  animation: rotate 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-.header__banner:hover {
-  animation: flip 2s infinite;
-}
-@keyframes flip {
-  50% {
-    transform: rotateY(180deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: translateZ(200px) rotate(45deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateZ(0) rotate(0);
-    opacity: 1;
-  }
+.header__tittle {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-shadow: 0px 0px 5px, 1px 1px 7px black;
 }
 
 .registros {
@@ -11287,6 +11213,7 @@ body {
   background-color: white;
   padding: auto;
   overflow: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .registros__icon {
   font-size: 1.5625rem;
