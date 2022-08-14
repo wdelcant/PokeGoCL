@@ -11215,21 +11215,22 @@ body {
   overflow: auto;
   box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.5);
 }
+.registros__table th {
+  text-align: center;
+  padding: 0.625rem;
+  background-color: #4a2575;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.registros__table tr:hover {
+  font-weight: bold;
+  background-color: rgba(192, 154, 236, 0.4235294118);
+}
 .registros__icon {
   font-size: 1.5625rem;
   color: rgb(158, 158, 158);
-}
-.registros__icon--amarillo:hover {
-  color: rgb(255, 255, 0);
-  text-shadow: 0px 0px 4px, 1px 1px 5px rgb(194, 194, 194);
-}
-.registros__icon--rojo:hover {
-  color: rgb(255, 0, 0);
-  text-shadow: 0px 0px 4px, 1px 1px 5px rgb(194, 194, 194);
-}
-.registros__icon--azul:hover {
-  color: rgb(0, 0, 255);
-  text-shadow: 0px 0px 4px, 1px 1px 5px rgb(194, 194, 194);
 }
 .registros__icon--wsp {
   color: rgb(37, 211, 102);
