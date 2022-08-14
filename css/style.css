@@ -11494,96 +11494,46 @@ body {
   }
 }
 
-/* footer styles */
 .footer {
   background: #522881;
   height: 150px;
   text-align: center;
   padding-top: 20px;
 }
-
 .footer h4 {
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
 }
-
-.copy {
+.footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+}
+.footer__social {
+  font-size: 20px;
+  text-align: center;
+}
+.footer__social i:hover {
+  text-shadow: 0px 0px 5px, 1px 1px 7px black;
+}
+.footer__social--fb:hover {
+  color: rgb(66, 103, 178);
+}
+.footer__social--tg:hover {
+  color: rgb(42, 171, 238);
+}
+.footer__social--wsp:hover {
+  color: rgb(37, 211, 102);
+}
+.footer__social--mail:hover {
+  color: rgb(255, 0, 0);
+}
+.footer__copy {
   padding-top: 20px;
   color: #D6D6D6;
   font-size: 14px;
   text-align: center;
-}
-
-.copy a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-.copy a:hover {
-  color: #e292ff;
-  text-shadow: 0px 0px 6px, 1px 1px 7px black;
-}
-
-.social-links a {
-  color: white;
-  padding: 0px 5px 0px 5px;
-}
-
-.social-links a:hover {
-  color: #e292ff;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.social-links i:hover {
-  animation: icon 2s infinite;
-  text-shadow: 0px 0px 5px, 1px 1px 7px black;
-}
-
-@keyframes icon {
-  50% {
-    transform: rotateY(180deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
-/* smaller resolution styles */
-@media (min-width: 100px) and (max-width: 700px) {
-  .fa-bars {
-    display: block !important;
-  }
-  .header-links {
-    display: none;
-  }
-}
-/* mobile styles */
-@media (min-width: 200px) and (max-width: 400px) {
-  .content {
-    max-width: 250px;
-  }
-  .content-slide {
-    max-width: 250px;
-  }
-  .content-slide img {
-    width: 100%;
-  }
-}
-/*  tabled e iPad resolution styles */
-@media (min-width: 600px) and (max-width: 820px) {
-  .content {
-    max-width: 600px;
-  }
-  .content-slide {
-    max-width: 500px;
-  }
-  .content-slide img {
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
