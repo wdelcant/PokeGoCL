@@ -58,11 +58,11 @@ function obtenerEntrenadores() {
 
                     let phone = document.createElement('td')
                     phone.classList.add = 'phone'
-                    phone.innerHTML = `<td><a href="${entrenador.phone}"><i class="bi bi-whatsapp registros__icon registros__icon--wsp"></i></a></td>`
+                    phone.innerHTML = `<td><a href="${entrenador.phone}"><i class="bi bi-whatsapp registros__icon registros__icon--wsp" target="_blank"></i></a></td>`
                     // phone.classList.add('phone')
 
                     let image = document.createElement('td')
-                    image.innerHTML = `<td><a href="${entrenador.image}" alt="${entrenador.nick}"><i class="bi bi-images registros__icon registros__icon--img"></i></a></td>`
+                    image.innerHTML = `<td><a href="${entrenador.image}" alt="${entrenador.nick}"><i class="bi bi-images registros__icon registros__icon--img" target="_blank"></i></a></td>`
                     image.classList.add('image')
 
                     /* Agregar los elementos secundarios al elemento principal. */
@@ -83,4 +83,3 @@ function obtenerEntrenadores() {
 
 }
 obtenerEntrenadores();
-
