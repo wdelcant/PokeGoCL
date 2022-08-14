@@ -11527,13 +11527,19 @@ body {
   color: rgb(37, 211, 102);
 }
 .footer__social--mail:hover {
-  color: rgb(255, 0, 0);
+  color: rgb(212, 255, 0);
 }
 .footer__copy {
   padding-top: 20px;
   color: #D6D6D6;
   font-size: 14px;
   text-align: center;
+}
+.footer__copy a {
+  text-shadow: 0px 0px 5px, 1px 1px 7px black;
+}
+.footer__copy a:hover {
+  color: rgb(219, 28, 28);
 }
 
 /*# sourceMappingURL=style.css.map */
