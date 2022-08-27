@@ -53,7 +53,6 @@ function obtenerEntrenadores() {
 
                     } else if (entrenador.team === 'Valor (Rojo)') {
                         team.innerHTML = `<img src="/assets/images/rojo.png" alt="valor" class="registros__icon registros__icon--rojo">`;
-
                     }
 
                     let phone = document.createElement('td')
@@ -66,7 +65,6 @@ function obtenerEntrenadores() {
                     image.classList.add('image')
 
                     /* Agregar los elementos secundarios al elemento principal. */
-
                     columna.appendChild(nick)
                     columna.appendChild(code)
                     columna.appendChild(location)
@@ -75,11 +73,15 @@ function obtenerEntrenadores() {
                     columna.appendChild(image)
                     /* Agregar el elemento principal al contenedor. */
                     obtenerTrainers.appendChild(columna)
+
                 })
             }
         })
 
-        .catch(err => console.error(err));
+        .catch(err => console.error(err)
+        
+        );
 
 }
 obtenerEntrenadores();
+
